@@ -1,0 +1,14 @@
+.Header{
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.Header img{
+    height: 30px;
+    margin-top:10px;
+    margin-left:10px;
+}
+.Header i{
+    margin-top:10px;
+    margin-right:10px;
+}
