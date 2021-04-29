@@ -23,6 +23,7 @@ Form {
   justify-content: space-around;
   margin-left: 10px;
   margin-top: -30px;
+  height: 50px;
 }
 .name-input {
   font-size: 15px;
@@ -32,7 +33,7 @@ Form {
 }
 .Form-Select {
   margin-left: 20px;
-  margin-top: -60px;
+  margin-top: -40px;
 }
 
 .Form-Select select {

@@ -11,13 +11,16 @@ const NameInput = ({ label, ...props }) => {
     <div className="form-name-input">
       <label htmlFor={props.name}>{label}</label>
       <input
+        data-testid="name"
         className="name-input"
         {...field}
         {...meta}
         placeholder={props.placeholder}
       />
       {meta.touched && meta.error ? (
-        <div className="Error">{meta.error}</div>
+        <div data-testid="Errors" className="Error">
+          {meta.error}
+        </div>
       ) : null}
     </div>
   );
@@ -82,14 +85,14 @@ const SignupForm = () => {
         }}
       >
         {({ dirty, isValid }) => (
-          <Form>
+          <Form id="signup-form">
             <div className="icon">
               <i class="fa fa-envelope"></i>
               <p style={{ fontSize: "20px" }}>Contact Us</p>
             </div>
             <div className="top-content">
               <NameInput
-                label="Your Name:"
+                label="Your Name"
                 name="name"
                 placeholder="Enter the issue"
                 type="text"
